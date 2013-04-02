@@ -7,11 +7,16 @@
 //
 
 #include <iostream>
+#include <opencv2/opencv.hpp>
 
 int main(int argc, const char * argv[])
 {
 
-    std::cout<<"this is a test.";
+//    std::cout<<"this is a test.";
+    
+    cv::Mat temp = cv::imread("/Users/xup6qup3/Dropbox/Photos/cock.jpg");
+    cv::imshow("temp", temp);
+    cv::waitKey(0);
     
     return 0;
 }
